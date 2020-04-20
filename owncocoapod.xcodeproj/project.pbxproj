@@ -16,6 +16,7 @@
 		EE69882C244D532E00759428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE69882A244D532E00759428 /* Main.storyboard */; };
 		EE69882E244D533200759428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE69882D244D533200759428 /* Assets.xcassets */; };
 		EE698831244D533200759428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE69882F244D533200759428 /* LaunchScreen.storyboard */; };
+		EE698837244D565C00759428 /* owncocoapod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE698836244D565C00759428 /* owncocoapod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		EE69882D244D533200759428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE698830244D533200759428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE698832244D533200759428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE698836244D565C00759428 /* owncocoapod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = owncocoapod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		EE6987FA244D530500759428 = {
 			isa = PBXGroup;
 			children = (
+				EE698836244D565C00759428 /* owncocoapod.swift */,
 				EE698806244D530500759428 /* owncocoapod */,
 				EE698811244D530500759428 /* owncocoapodTests */,
 				EE698823244D532E00759428 /* owncocoapodexample */,
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					EE698803244D530500759428 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					EE69880C244D530500759428 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE698837244D565C00759428 /* owncocoapod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		EE698819244D530500759428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GG9M3SY3Q6;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dualemahat.owncocoapod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		EE69881A244D530500759428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GG9M3SY3Q6;
@@ -485,6 +493,7 @@
 		EE69881C244D530500759428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GG9M3SY3Q6;
 				INFOPLIST_FILE = owncocoapodTests/Info.plist;
@@ -503,6 +512,7 @@
 		EE69881D244D530500759428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GG9M3SY3Q6;
 				INFOPLIST_FILE = owncocoapodTests/Info.plist;
